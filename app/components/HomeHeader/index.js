@@ -2,6 +2,7 @@
  * Created by litong on 2017/6/7.
  */
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.less'
 
 class HomeHeader extends React.Component{
@@ -14,10 +15,12 @@ class HomeHeader extends React.Component{
     render() {
         return (
             <div className="home-header">
-                <div className="header-left">
-                    { this.props.cityName }
-                    <i className="icon-angle-down"></i>
-                </div>
+                <Link to="/city">
+                    <div className="header-left">
+                        { this.props.cityName }
+                        <i className="icon-angle-down"></i>
+                    </div>
+                </Link>
                 <div className="header-center">
                     <i className="icon-search"></i>
                     <input type="text" placeholder="请输入关键字"/>

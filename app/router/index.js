@@ -14,6 +14,7 @@ import localStore from '../utils/localStore'
 import * as KeysDefine from '../config/keysDefine'
 
 import Home from '../containers/Home'
+import City from '../containers/City'
 
 import '../../static/css/common.less'
 import '../../static/css/font.css'
@@ -22,7 +23,8 @@ class App extends React.Component{
     render() {
         let routes = (
                 <Switch>
-                    <Route excat path="/" component={ Home }></Route>
+                    <Route exact path="/" component={ Home }></Route>
+                    <Route path="/city" component={ City }></Route>
                 </Switch>
         )
         return (

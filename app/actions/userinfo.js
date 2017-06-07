@@ -44,7 +44,6 @@ export  function getLikeList(city,page) {
 }
 
 export function saveLikeList(object) {
-    console.log('下载完成')
     return {
         type: actionTypes.SAVE_LIKELIST,
         payload: {
@@ -55,7 +54,6 @@ export function saveLikeList(object) {
 }
 
 export function setLikeListLoading(flag) {
-    console.log('开始下载' + flag)
     return {
         type: actionTypes.SET_ISLOADINGLIKELIST_FLAG,
         payload: {
