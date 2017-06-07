@@ -26,6 +26,11 @@ export function userinfo(state = initialState,action) {
                 page: state.page + 1,
                 likeList: state.likeList.concat(action.payload.likeList)
             }
+        case actinTypes.SET_ISLOADINGLIKELIST_FLAG:
+            return {
+                ...state,
+                isLoading: action.payload.isLoading
+            }
         default:
             return state
     }

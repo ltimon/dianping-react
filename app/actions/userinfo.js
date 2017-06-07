@@ -32,6 +32,7 @@ export function saveHomeAd(object) {
 //获取 猜你喜欢 信息
 export  function getLikeList(city,page) {
     return dispatch => {
+        dispatch(setLikeListLoading(true))//此处先设置 是否正在加载信息的状态
         axois.get('/api/homelist/' + city + '/' + page)
             .then((res) => {
                 dispatch(saveLikeList(res.data))
@@ -43,10 +44,22 @@ export  function getLikeList(city,page) {
 }
 
 export function saveLikeList(object) {
+    console.log('下载完成')
     return {
         type: actionTypes.SAVE_LIKELIST,
         payload: {
-            likeList: object.data
+            likeList: object.data,
+            isLoading: false
+        }
+    }
+}
+
+export function setLikeListLoading(flag) {
+    console.log('开始下载' + flag)
+    return {
+        type: actionTypes.SET_ISLOADINGLIKELIST_FLAG,
+        payload: {
+            isLoading: flag
         }
     }
 }

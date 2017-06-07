@@ -37,7 +37,7 @@ class Home extends React.Component{
                           ? <LikeList likeList={this.props.userInfo.likeList}></LikeList>
                           : <div>加载中</div>
                   }
-                  <LoadMore loadMore={this.loadMoreLikeList.bind(this)}/>
+                  <LoadMore loadMore={this.loadMoreLikeList.bind(this)} isLoadingMore={this.props.userInfo.isLoading}/>
               </div>
           )
       }
