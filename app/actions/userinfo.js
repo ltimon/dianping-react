@@ -14,7 +14,6 @@ export function getHomeAd() {
 //发送异步 action
     return dispatch => axois.get('/api/homead')
         .then((res) => {
-            console.log('请求成功 发送 SAVE')
             dispatch(saveHomeAd(res.data))
         })
         .catch((error) => {

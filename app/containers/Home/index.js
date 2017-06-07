@@ -4,9 +4,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import axios from 'axios'
-
+//组件
 import HomeHeader from '../../components/HomeHeader'
 import Category from '../../components/Category'
+import HomeAd from '../../components/HomeAd'
 
 import { getHomeAd } from '../../actions/userinfo'
 class Home extends React.Component{
@@ -21,20 +22,19 @@ class Home extends React.Component{
               <div>
                   <HomeHeader cityName={this.props.userInfo.cityName}></HomeHeader>
                   <Category></Category>
-                  <div style={{ height: '15px',background: '#eee'}}></div>
+                  <div style={{ height: '15px',background: '#ededed'}}></div>
+                  {
+                      this.props.userInfo.homeAd
+                          ? <HomeAd homead={this.props.userInfo.homeAd}></HomeAd>
+                          : <div>加载中</div>
+                  }
+
               </div>
           )
       }
-
     componentDidMount() {
+        //在这里请求 广告信息
         this.props.getHomeAd()
-        // axios.get('/api/homead')
-        //     .then(function (res) {
-        //         console.log(res)
-        //     })
-        //     .catch(function (error) {
-        //         console.log(error)
-        //     })
     }
 }
 
@@ -47,9 +47,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch,ownProps) {
     return {
         getHomeAd: () => {
-            // axios.get('/api/homead').then(function (res) {
-            //     dispatch(getHomeAd(res.data))
-            // })
+            //发送请求广告的Action
             dispatch(getHomeAd())
         }
     }

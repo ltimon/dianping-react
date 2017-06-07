@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/Home/index.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/HomeAd/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="294">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
               <folding>
                 <element signature="e#42#67#0" expanded="true" />
               </folding>
@@ -33,46 +33,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userinfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/reducers/userinfo.js">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/HomeAd/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="63">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-              <folding>
-                <element signature="e#42#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/actionTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userinfo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/actions/userinfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -118,8 +84,11 @@
         <option value="$PROJECT_DIR$/app/router/index.js" />
         <option value="$PROJECT_DIR$/app/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/app/reducers/userinfo.js" />
+        <option value="$PROJECT_DIR$/app/components/HomeAd/style.css" />
         <option value="$PROJECT_DIR$/app/containers/Home/index.js" />
         <option value="$PROJECT_DIR$/app/actions/userinfo.js" />
+        <option value="$PROJECT_DIR$/app/components/HomeAd/style.less" />
+        <option value="$PROJECT_DIR$/app/components/HomeAd/index.js" />
       </list>
     </option>
   </component>
@@ -302,10 +271,6 @@
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeHeader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,6 +287,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeAd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,15 +421,15 @@
       <workItem from="1496744274068" duration="620000" />
       <workItem from="1496745518508" duration="1929000" />
       <workItem from="1496757450990" duration="6787000" />
-      <workItem from="1496802086847" duration="15709000" />
+      <workItem from="1496802086847" duration="18347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25045000" />
+    <option name="totallyTimeSpent" value="27683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="23" width="1261" height="764" extended-state="1" />
+    <frame x="7" y="23" width="1261" height="764" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24758065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -810,11 +779,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reducers/userinfo.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/Home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="e#42#67#0" expanded="true" />
+            <element signature="e#137#189#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -826,22 +798,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/Home/index.js">
+    <entry file="file://$PROJECT_DIR$/app/actions/userinfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="203">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
-            <element signature="e#42#67#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/userinfo.js">
+    <entry file="file://$PROJECT_DIR$/app/reducers/userinfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/HomeAd/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/HomeAd/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#42#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
