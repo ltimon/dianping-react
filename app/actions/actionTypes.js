@@ -1,0 +1,3 @@
+export const USER_CURRENTCITY =  'USER_CURRENTCITY'
+export const GET_HOMEAD = 'GET_HOMEAD'
+export const SAVE_HOMEAD = 'SAVE_HOMEAD'
