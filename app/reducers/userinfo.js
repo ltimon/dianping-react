@@ -16,6 +16,11 @@ export function userinfo(state = initialState,action) {
                 ...state,
                 homeAd: action.payload.homeAd
             }
+        case  actinTypes.SAVE_LIKELIST:
+            return {
+                ...state,
+                likeList: action.payload.likeList
+            }
         default:
             return state
     }

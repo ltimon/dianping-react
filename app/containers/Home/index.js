@@ -8,8 +8,9 @@ import axios from 'axios'
 import HomeHeader from '../../components/HomeHeader'
 import Category from '../../components/Category'
 import HomeAd from '../../components/HomeAd'
+import LikeList from '../../components/LikeList'
 
-import { getHomeAd } from '../../actions/userinfo'
+import { getHomeAd,getLikeList } from '../../actions/userinfo'
 class Home extends React.Component{
     // 构造
       constructor(props) {
@@ -28,13 +29,19 @@ class Home extends React.Component{
                           ? <HomeAd homead={this.props.userInfo.homeAd}></HomeAd>
                           : <div>加载中</div>
                   }
-
+                  {
+                      this.props.userInfo.likeList
+                          ? <LikeList likeList={this.props.userInfo.likeList}></LikeList>
+                          : <div>加载中</div>
+                  }
               </div>
           )
       }
     componentDidMount() {
         //在这里请求 广告信息
         this.props.getHomeAd()
+        //在这里请求 猜你喜欢信息
+        this.props.getLikeList(this.props.userInfo.cityName,1)
     }
 }
 
@@ -49,6 +56,9 @@ function mapDispatchToProps(dispatch,ownProps) {
         getHomeAd: () => {
             //发送请求广告的Action
             dispatch(getHomeAd())
+        },
+        getLikeList: () => {
+            dispatch(getLikeList())
         }
     }
 }
