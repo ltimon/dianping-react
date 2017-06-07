@@ -9,6 +9,7 @@ import HomeHeader from '../../components/HomeHeader'
 import Category from '../../components/Category'
 import HomeAd from '../../components/HomeAd'
 import LikeList from '../../components/LikeList'
+import LoadMore from '../../components/LoadMore'
 
 import { getHomeAd,getLikeList } from '../../actions/userinfo'
 class Home extends React.Component{
@@ -16,7 +17,9 @@ class Home extends React.Component{
       constructor(props) {
         super(props);
         // 初始状态
-        this.state = {};
+        this.state = {
+            hasMore: true
+        }
       }
       render() {
           return (
@@ -30,10 +33,11 @@ class Home extends React.Component{
                           : <div>加载中</div>
                   }
                   {
-                      this.props.userInfo.likeList
+                      this.props.userInfo.likeList.length > 0
                           ? <LikeList likeList={this.props.userInfo.likeList}></LikeList>
                           : <div>加载中</div>
                   }
+                  <LoadMore loadMore={this.loadMoreLikeList.bind(this)}/>
               </div>
           )
       }
@@ -41,7 +45,10 @@ class Home extends React.Component{
         //在这里请求 广告信息
         this.props.getHomeAd()
         //在这里请求 猜你喜欢信息
-        this.props.getLikeList(this.props.userInfo.cityName,1)
+        this.props.getLikeList(this.props.userInfo.cityName,this.props.userInfo.page)
+    }
+    loadMoreLikeList() {
+        this.props.getLikeList(this.props.userInfo.cityName,this.props.userInfo.page)
     }
 }
 
@@ -58,6 +65,7 @@ function mapDispatchToProps(dispatch,ownProps) {
             dispatch(getHomeAd())
         },
         getLikeList: () => {
+            //发送请求 猜你喜欢的 Action
             dispatch(getLikeList())
         }
     }

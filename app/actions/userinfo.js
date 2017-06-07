@@ -46,7 +46,7 @@ export function saveLikeList(object) {
     return {
         type: actionTypes.SAVE_LIKELIST,
         payload: {
-            likeList: object
+            likeList: object.data
         }
     }
 }

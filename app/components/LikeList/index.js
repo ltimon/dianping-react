@@ -7,7 +7,7 @@ import LikeItem from './subs/LikeItem'
 import './style.less'
 class LikeList extends React.Component{
     render() {
-        var likeList = this.props.likeList.data
+        var likeList = this.props.likeList
         return (
             <div>
                 <h2 className="home-list-title">
