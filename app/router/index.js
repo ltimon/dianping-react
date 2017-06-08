@@ -16,6 +16,7 @@ import * as KeysDefine from '../config/keysDefine'
 
 import Home from '../containers/Home'
 import City from '../containers/City'
+import Detail from '../containers/Detail'
 import Search from '../containers/Search'
 import NotFound from '../containers/NotFound'
 
@@ -34,6 +35,7 @@ class App extends React.Component{
                     <Route exact path="/" component={ Home }></Route>
                     <Route path="/city" component={ City }></Route>
                     <Route path="/search/:keyword" component={ Search }></Route>
+                    <Route path="/detail/:id" component={ Detail }></Route>
                     <Route path="*" component={ NotFound }></Route>
                 </Switch>
             </Router>

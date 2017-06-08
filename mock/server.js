@@ -23,6 +23,15 @@ router.get('/api/homelist/:city/:page',(ctx,next) => {
     ctx.body = homeListData
 })
 
+//详情页面
+const detailData = require('./detail/info')
+router.get('/api/detail/info/:id',(ctx,next) => {
+    //获取参数
+    const params = ctx.params
+    const id = params.id
+    ctx.body = detailData
+})
+
 // 开始服务并生产路由
 app.use(router.routes())
     .use(router.allowedMethods)

@@ -51,7 +51,7 @@ export  function getLikeList(city,page) {
             })
     }
 }
-
+//猜你喜欢
 export function saveLikeList(object) {
     return {
         type: actionTypes.SAVE_LIKELIST,

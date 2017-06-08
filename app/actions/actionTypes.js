@@ -8,3 +8,5 @@ export const SAVE_HOMEAD = 'SAVE_HOMEAD'
 export const SAVE_LIKELIST = 'SAVE_LIKELIST'
 //设置是否正在加载  猜你喜欢的列表信息 的状态
 export const SET_ISLOADINGLIKELIST_FLAG = 'SET_ISLOADINGLIKELIST_FLAG'
+//在首页点击后 请求详情内容的Action
+export const GET_DETAIL_INFO = 'GET_DETAIL_INFO'
