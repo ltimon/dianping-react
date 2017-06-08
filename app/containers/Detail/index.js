@@ -8,7 +8,7 @@ import { getDetailInfo } from '../../actions/detail'
 
 import Header from '../../components/Header'
 import Buy from './subpage/Buy'
-import Info from './subpage/Info'
+import DetailInfo from '../../components/DetailInfo'
 class Detail extends React.Component {
     render() {
         const match = this.props.match
@@ -16,7 +16,8 @@ class Detail extends React.Component {
             <div>
                 <Header title="商户详情"></Header>
                 <Buy></Buy>
-                <Info id={match.id}></Info>
+                {/* 如果数据请求成功 就把数据传递给子组件,否则 传空*/}
+                <DetailInfo data={this.props.detail ? this.props.detail : ''}/>
             </div>
         )
     }

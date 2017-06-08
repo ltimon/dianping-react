@@ -4,6 +4,9 @@
 import React from 'react'
 
 import Star from '../../components/Start'
+
+import './style.less'
+
 class DetailInfo extends React.Component {
     render() {
         const data = this.props.data
