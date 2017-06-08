@@ -2,7 +2,7 @@
  * Created by litong on 2017/6/8.
  */
 import React from 'react'
-
+import { BrowserRouter } from 'react-router-dom'
 import './style.less'
 
 class Header extends React.Component {
@@ -18,7 +18,8 @@ class Header extends React.Component {
     }
 
     clickHandle() {
-        this.props.goBack()
+        // this.props.goBack()
+        window.history.back()
     }
 }
 

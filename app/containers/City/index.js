@@ -10,12 +10,14 @@ import { USER_CURRENT_CITY } from '../../config/keysDefine'
 
 import CityList from '../../components/CityList'
 import Header from '../../components/Header'
+import CurrentCity from './subpages/CurrentCity'
 
 class City extends React.Component {
     render() {
         return (
             <div>
                 <Header title="选择城市" goBack={this.goBack.bind(this)}></Header>
+                <CurrentCity currentCityName={this.props.userInfo.cityName}></CurrentCity>
                 <CityList chooseCity={this.chooseCity.bind(this)}></CityList>
             </div>
         )
@@ -35,7 +37,7 @@ class City extends React.Component {
 
 function mapStateToProps(state) {
     return {
-
+        userInfo: state.userinfo
     }
 }
 

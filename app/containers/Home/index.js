@@ -24,7 +24,7 @@ class Home extends React.Component{
       render() {
           return (
               <div>
-                  <HomeHeader cityName={this.props.userInfo.cityName}></HomeHeader>
+                  <HomeHeader cityName={this.props.userInfo.cityName} search={this.search.bind(this)}></HomeHeader>
                   <Category></Category>
                   <div style={{ height: '15px',background: '#ededed'}}></div>
                   {
@@ -49,6 +49,10 @@ class Home extends React.Component{
     }
     loadMoreLikeList() {
         this.props.getLikeList(this.props.userInfo.cityName,this.props.userInfo.page)
+    }
+    search(keyword) {
+        console.log('开始搜索' + keyword)
+        this.props.history.push('/search/' + encodeURIComponent(keyword))
     }
 }
 

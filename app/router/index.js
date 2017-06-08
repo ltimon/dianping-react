@@ -16,6 +16,8 @@ import * as KeysDefine from '../config/keysDefine'
 
 import Home from '../containers/Home'
 import City from '../containers/City'
+import Search from '../containers/Search'
+import NotFound from '../containers/NotFound'
 
 import '../../static/css/common.less'
 import '../../static/css/font.css'
@@ -25,15 +27,15 @@ const history = createHistory()
 
 class App extends React.Component{
     render() {
-        let routes = (
+        var match = this.props.match
+        return (
+            <Router history={ history }>
                 <Switch>
                     <Route exact path="/" component={ Home }></Route>
                     <Route path="/city" component={ City }></Route>
+                    <Route path="/search/:keyword" component={ Search }></Route>
+                    <Route path="*" component={ NotFound }></Route>
                 </Switch>
-        )
-        return (
-            <Router history={ history }>
-                {routes}
             </Router>
         )
     }

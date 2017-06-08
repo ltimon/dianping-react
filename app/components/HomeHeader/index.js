@@ -3,7 +3,9 @@
  */
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import './style.less'
+import SearchInput from '../../components/SearchInput'
 
 class HomeHeader extends React.Component{
     // 构造
@@ -23,11 +25,17 @@ class HomeHeader extends React.Component{
                 </Link>
                 <div className="header-center">
                     <i className="icon-search"></i>
-                    <input type="text" placeholder="请输入关键字"/>
+                    <SearchInput value='' searchHandle={this.search.bind(this)}/>
                 </div>
                 <div className="header-right"><i className="icon-user"></i></div>
             </div>
         )
+    }
+
+    search(keyword) {
+        //此处应该跳转到 search页面中
+        
+        this.props.search(keyword)
     }
 }
 
