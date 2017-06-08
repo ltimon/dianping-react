@@ -9,6 +9,15 @@ export function initCity(cityName) {
         }
     }
 }
+//更新 用户选择的城市,这里 直接处理过程按照 initCity了 所以就不做改变了
+export function updateCity(cityName) {
+    return {
+        type: actionTypes.USER_CURRENTCITY,
+        payload: {
+            cityName: cityName
+        }
+    }
+}
 //获取 超值特惠 信息
 export function getHomeAd() {
 //发送异步 action

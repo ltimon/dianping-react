@@ -7,6 +7,7 @@ import  {
     Route,
     Switch
 } from 'react-router-dom'
+import createHistory from 'history/createBrowserHistory'
 import { connect } from 'react-redux'
 import { initCity } from '../actions/userinfo'
 
@@ -19,6 +20,9 @@ import City from '../containers/City'
 import '../../static/css/common.less'
 import '../../static/css/font.css'
 
+
+const history = createHistory()
+
 class App extends React.Component{
     render() {
         let routes = (
@@ -28,7 +32,7 @@ class App extends React.Component{
                 </Switch>
         )
         return (
-            <Router>
+            <Router history={ history }>
                 {routes}
             </Router>
         )
