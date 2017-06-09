@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/CommentList/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
@@ -41,6 +41,16 @@
               <folding>
                 <element signature="e#42#67#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +162,6 @@
         <option value="$PROJECT_DIR$/app/actions/userinfo.js" />
         <option value="$PROJECT_DIR$/webpack.product.config.js" />
         <option value="$PROJECT_DIR$/app/reducers/index.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/components/DetailInfo/style.less" />
         <option value="$PROJECT_DIR$/app/components/DetailInfo/index.js" />
         <option value="$PROJECT_DIR$/app/containers/Detail/subpage/Commonet.js" />
@@ -167,6 +176,7 @@
         <option value="$PROJECT_DIR$/app/actions/detail.js" />
         <option value="$PROJECT_DIR$/app/containers/Detail/index.js" />
         <option value="$PROJECT_DIR$/app/components/CommentList/index.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -679,12 +689,12 @@
       <workItem from="1496842567087" duration="5634000" />
       <workItem from="1496888081568" duration="13644000" />
       <workItem from="1496929480238" duration="8727000" />
-      <workItem from="1496974101923" duration="4074000" />
+      <workItem from="1496974101923" duration="4692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75429000" />
+    <option name="totallyTimeSpent" value="76047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="23" width="1261" height="764" extended-state="0" />
@@ -949,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1132,6 +1135,14 @@
           <folding>
             <element signature="e#42#67#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
