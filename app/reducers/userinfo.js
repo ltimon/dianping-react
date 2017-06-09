@@ -13,7 +13,8 @@ export function userinfo(state = initialState,action) {
         case actinTypes.USER_CURRENTCITY:
             return {
                 ...state,
-                cityName: action.payload.cityName
+                cityName: action.payload.cityName,
+                userName: '小明'
             }
         case actinTypes.SAVE_HOMEAD:
             return {

@@ -27,7 +27,9 @@ class HomeHeader extends React.Component{
                     <i className="icon-search"></i>
                     <SearchInput value='' searchHandle={this.search.bind(this)}/>
                 </div>
-                <div className="header-right"><i className="icon-user"></i></div>
+                <Link to="/user">
+                    <div className="header-right"><i className="icon-user"></i></div>
+                </Link>
             </div>
         )
     }

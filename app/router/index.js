@@ -19,6 +19,7 @@ import City from '../containers/City'
 import Detail from '../containers/Detail'
 import Search from '../containers/Search'
 import NotFound from '../containers/NotFound'
+import User from '../containers/User'
 
 import '../../static/css/common.less'
 import '../../static/css/font.css'
@@ -36,6 +37,7 @@ class App extends React.Component{
                     <Route path="/city" component={ City }></Route>
                     <Route path="/search/:keyword" component={ Search }></Route>
                     <Route path="/detail/:id" component={ Detail }></Route>
+                    <Route path="/user" component={ User }></Route>
                     <Route path="*" component={ NotFound }></Route>
                 </Switch>
             </Router>
