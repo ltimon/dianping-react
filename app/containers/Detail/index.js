@@ -4,7 +4,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { getDetailInfo } from '../../actions/detail'
+import { getDetailInfo,getComments } from '../../actions/detail'
 
 import Header from '../../components/Header'
 import Buy from './subpage/Buy'
@@ -20,7 +20,7 @@ class Detail extends React.Component {
                 <Buy></Buy>
                 {/* 如果数据请求成功 就把数据传递给子组件,否则 传空*/}
                 <DetailInfo data={this.props.detail ? this.props.detail : ''}/>
-                <Comment></Comment>
+                <Comment data={ this.props.comments ? this.props.comments : '' }></Comment>
             </div>
         )
     }
@@ -29,12 +29,14 @@ class Detail extends React.Component {
         const match = this.props.match
         //根据 id 来请求详情的内容
         this.props.getDetailInfo(match.params.id)
+        this.props.getComments(match.params.id)
     }
 }
 
 function mapStateToProps(state) {
     return {
-        detail: state.detailinfo.info
+        detail: state.detailinfo.info,
+        comments: state.detailinfo.comments
     }
 }
 
@@ -42,6 +44,9 @@ function mapDispatchToProps(dispatch,ownPorps) {
     return {
         getDetailInfo: (id) => {
             dispatch(getDetailInfo(id))
+        },
+        getComments: (id) => {
+            dispatch(getComments(id))
         }
     }
 }

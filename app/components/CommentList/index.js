@@ -22,12 +22,18 @@ class CommentList extends React.Component {
             comment: '非常好吃，棒棒的，下次再来',
             star: 5
         }
+        const  comments = this.props.comments.data ? this.props.comments.data : ''
+        console.log(comments)
         return (
             <div>
                 {
-                    this.state.list.map((item,index) => {
-                       return <Item key={ index } data={data}></Item>
-                    })
+                    comments
+                    ?
+                        comments.map((item,index) => {
+                           return <Item key={ index } data={item}></Item>
+                        })
+
+                    : ''
                 }
             </div>
             

@@ -10,3 +10,5 @@ export const SAVE_LIKELIST = 'SAVE_LIKELIST'
 export const SET_ISLOADINGLIKELIST_FLAG = 'SET_ISLOADINGLIKELIST_FLAG'
 //在首页点击后 请求详情内容的Action
 export const GET_DETAIL_INFO = 'GET_DETAIL_INFO'
+//请求评论内容的 action
+export const GET_COMMENT_LIST = 'GET_COMMENT_LIST'

@@ -31,7 +31,13 @@ router.get('/api/detail/info/:id',(ctx,next) => {
     const id = params.id
     ctx.body = detailData
 })
-
+//详情页面 --评价列表
+const commentData = require('./detail/comment')
+router.get('/api/detail/comment/:id',(ctx,next) => {
+    const params = ctx.params
+    const id = params.id
+    ctx.body = commentData
+})
 // 开始服务并生产路由
 app.use(router.routes())
     .use(router.allowedMethods)

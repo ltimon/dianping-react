@@ -9,10 +9,11 @@ import './comment.less'
 
 class Comment extends React.Component {
     render() {
+        const comments = this.props.data ? this.props.data : ''
         return (
             <div className="detail-comment-subpage">
                 <h2>用户点评</h2>
-                <CommentList></CommentList>
+                <CommentList comments={comments}></CommentList>
             </div>
         )
     }
