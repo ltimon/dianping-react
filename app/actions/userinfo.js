@@ -1,6 +1,12 @@
 import * as actionTypes from './actionTypes'
 import axois from 'axios'
 
+
+
+/*
+    以下所有以  save开始的方法  是指在发送请求的action之后异步得到数据后  的方法
+*/
+
 export function initCity(cityName) {
     return {
         type: actionTypes.USER_CURRENTCITY,
@@ -67,6 +73,25 @@ export function setLikeListLoading(flag) {
         type: actionTypes.SET_ISLOADINGLIKELIST_FLAG,
         payload: {
             isLoading: flag
+        }
+    }
+}
+
+//获取用户界面中的 用户信息
+export function getOrderList() {
+    return dispatch => axois.get('/api/user/orderlist')
+        .then((res) => {
+            dispatch(saveOrderList(res.data))
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+}
+export function saveOrderList(object) {
+    return {
+        type: actionTypes.GET_COMMENT_LIST,
+        payload: {
+            orderList: object
         }
     }
 }

@@ -12,3 +12,5 @@ export const SET_ISLOADINGLIKELIST_FLAG = 'SET_ISLOADINGLIKELIST_FLAG'
 export const GET_DETAIL_INFO = 'GET_DETAIL_INFO'
 //请求评论内容的 action
 export const GET_COMMENT_LIST = 'GET_COMMENT_LIST'
+//获取用户界面中的  orderList
+export const GET_ORDER_LIST = 'GET_ORDER_LIST'

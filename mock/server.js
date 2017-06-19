@@ -38,6 +38,12 @@ router.get('/api/detail/comment/:id',(ctx,next) => {
     const id = params.id
     ctx.body = commentData
 })
+//User界面中 订单列表
+const orderList = require('./orderlist/orderlist')
+router.get('/api/user/orderlist',(ctx,next) => {
+    ctx.body = orderList
+})
+
 // 开始服务并生产路由
 app.use(router.routes())
     .use(router.allowedMethods)

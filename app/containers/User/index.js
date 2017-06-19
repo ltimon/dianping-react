@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 
 import Header from '../../components/Header'
 import UserInfo from '../../components/UserInfo'
+import OrderList from '../../components/OrderList'
 
 import './style.less'
 class User extends React.Component {
@@ -14,6 +15,7 @@ class User extends React.Component {
             <div>
                 <Header title="用户主页"></Header>
                 <UserInfo userInfo={ this.props.userInfo ? this.props.userInfo : '' }></UserInfo>
+                <OrderList></OrderList>
             </div>
         )
     }
